@@ -1,8 +1,7 @@
-# React + Vite
+# Exercise in React and Routing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## The Book shop
 
-Currently, two official plugins are available:
+[The assignment text is here](https://github.com/dat3Cph/material/blob/main/flow5/week4-routing/TuesdayExercise.md)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The purpose of the exercise is to train basic routing in React. Also using a facade pattern to mock a api.
