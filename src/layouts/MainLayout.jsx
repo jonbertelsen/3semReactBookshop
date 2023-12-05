@@ -35,7 +35,7 @@ function MainLayout({ bookId, setBookId, books, bookFacade }) {
             />
           </div>
         </header>
-        <div className="twocol">
+        <div className="two-col">
           <div className="col-1">
             <h1>Welcome to Book Shop</h1>
             <p>

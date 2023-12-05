@@ -81,10 +81,11 @@ ul.header {
     object-fit: cover;
  }
 
- .twocol {
+ .two-col {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  column-gap: 20px;
  }
 
  .col-1 {
@@ -153,4 +154,11 @@ table.table-striped tr:nth-child(even) {
   border-radius: 5px;
 }
 
+#add-book-message {
+  min-width: 200px;
+  padding-left:20px;
+  flex-grow: 1;
+  color: green;
+
+}
 
