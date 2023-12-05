@@ -14,7 +14,7 @@ function AddBookPage({ setBooks, bookFacade }) {
     event.preventDefault();
     if (newBook.title.length > 0 && newBook.info.length > 0) {
       bookFacade.addBook(newBook);
-      setBooks([...bookFacade.getBooks()]);
+      setBooks(bookFacade.getBooks());
       setNewBook(bookInit);
       setMessage('Book added - thanks. Check the booklist');
     } else {
@@ -45,8 +45,6 @@ function AddBookPage({ setBooks, bookFacade }) {
           />
 
           <button onClick={onSubmit}>Add book</button>
-
-          <p>{JSON.stringify(newBook)}</p>
         </form>
         <div id="add-book-message">
           {message && (

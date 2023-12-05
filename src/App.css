@@ -157,8 +157,12 @@ table.table-striped tr:nth-child(even) {
 #add-book-message {
   min-width: 200px;
   padding-left:20px;
+  padding-top: 10px;
   flex-grow: 1;
   color: green;
-
 }
 
+#add-book-message  p {
+  color: red;
+
+}
