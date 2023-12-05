@@ -18,6 +18,8 @@ function bookFacade()
         return books.find(book => book.id === bookId)
     }
 
+    const getMaxId = () => { return nextId - 1 };
+
     const deleteBook = (id) =>
     {
         const bookId = isNaN(id) ? Number(id) : id;
@@ -37,6 +39,7 @@ function bookFacade()
         findBook,
         deleteBook,
         addBook,
+        getMaxId
     }
 }
 

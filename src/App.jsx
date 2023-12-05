@@ -19,7 +19,12 @@ function App({ bookFacade }) {
       <Route
         path="/"
         element={
-          <MainLayout bookId={bookId} setBookId={setBookId} books={books} />
+          <MainLayout
+            bookId={bookId}
+            setBookId={setBookId}
+            books={books}
+            bookFacade={bookFacade}
+          />
         }
       >
         <Route

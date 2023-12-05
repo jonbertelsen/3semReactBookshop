@@ -2,16 +2,12 @@ import { NavLink, Outlet } from 'react-router-dom';
 import BookShopImage from '../assets/bookshop.jpg';
 import { useState, useEffect } from 'react';
 
-function MainLayout({ bookId, setBookId, books }) {
+function MainLayout({ bookId, setBookId, books, bookFacade }) {
   const [maxId, setMaxId] = useState();
 
   useEffect(() => {
-    const newMaxId = books.reduce(
-      (max, book) => (book.id > max ? book.id : max),
-      books[0].id
-    );
-    setMaxId(newMaxId);
-  }, [books, maxId]);
+    setMaxId(bookFacade.getMaxId());
+  }, [books]);
 
   return (
     <div id="page">
@@ -58,11 +54,7 @@ function MainLayout({ bookId, setBookId, books }) {
         {bookId > 99 && bookId <= maxId && (
           <div id="search-result">
             <h2>The quick'n dirty lookup</h2>
-            {books
-              .filter((book) => book.id == bookId)
-              .map((b) => (
-                <p key={b.id}>{b.title}</p>
-              ))}
+            <p>{bookFacade.findBook(bookId).title} </p>
           </div>
         )}
       </div>
