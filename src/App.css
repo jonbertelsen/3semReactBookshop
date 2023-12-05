@@ -1,0 +1,156 @@
+
+#container {
+ 
+  width: 800px;
+  padding:20px;
+  border: 1px solid red;
+}
+
+#page {
+  display: flex;
+  justify-content: center;
+}
+
+#subpage {
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+
+header {
+  margin-bottom: 20px;
+  display: flex;
+  border: 1px solid silver;
+  flex-wrap: wrap;
+ }
+
+ul.header {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+ }
+ 
+ ul.header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  border: none;
+ }
+ ul.header li a:hover:not(.active) { 
+  background-color: #111;
+}
+
+ .active { 
+  background-color: #4CAF50;
+}
+
+#searchbox {
+  display: flex;
+  flex-grow: 1;
+  justify-content: end;
+  align-items: center;
+
+}
+ #searchbox input {
+  background-color: white;
+  width: 50px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  margin: 5px 10px 5px 10px;
+ }
+
+ #searchbox label {
+  margin-right: 10px;
+ }
+
+ #bookshopimage {
+  max-width: 200px;
+  margin: 10px 0px 10px 10px;
+  border-radius: 50%;
+    /* Ensure the image is a square for a perfect circle */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+ }
+
+ .twocol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+
+ .col-1 {
+  max-width: 550px;
+ }
+
+
+ /* Books Page */
+
+ /* Targeting the table rows */
+
+ .table-striped
+ {
+  border-collapse: collapse;
+ }
+
+ .table-striped td
+ {
+  border: 1px solid rgb(81, 81, 81);
+  padding: 5px;
+ }
+
+ .table-striped th
+ {
+  border: 1px solid rgb(81, 81, 81);
+  background-color: silver;
+  font-weight: bold;
+  padding: 5px;
+ }
+
+table.table-striped tr:nth-child(odd) {
+  background-color: white;
+}
+
+table.table-striped tr:nth-child(even) {
+  background-color: silver;
+}
+
+#books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+#bookdetails {
+  padding: 10px;
+}
+
+/* Add Book */
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  width: 50%;
+}
+
+#book-form input {
+  padding: 5px;
+}
+
+#book-form button {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
